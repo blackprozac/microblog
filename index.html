@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>microblog</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+		function insertCurrentTime() {
+			var currentTime = new Date();
+			var formattedTime = currentTime.toLocaleString();
+			var timeElements = document.getElementsByTagName("time");
+			for (var i = 0; i < timeElements.length; i++) {
+				timeElements[i].innerHTML = formattedTime;
+			}
+		}
+	</script>
+  </head>
+  <body onload="insertCurrentTime()">
+    <header>
+      <img src="https://raw.githubusercontent.com/offensive0/offensive0.github.io/main/img/offensive.png">
+    </header>
+    <article>
+      <a href="https://offensive.cf">@off</a>&nbsp;<time></time>
+      <p>>> Hello, World!</p>
+    </article>
+    <br>
+    
+  </body>
+</html> 

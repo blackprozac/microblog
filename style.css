@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Consolas&display=swap');
+
+body {
+  background-color: black;
+  color: rgb(0, 0, 0);
+  font-family: consolas;
+}
+
+header {
+    color: white;
+  text-align: center;
+}
+
+article {
+  background-color: #ddd;
+  border-radius: 0px;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(177, 0, 0);
+}
+
+a:hover {
+  color: limegreen;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
