@@ -20,10 +20,7 @@ body, html {
   overflow-x: hidden;
 }
 
-/* Header */
-header {
 
-}
 
 header h1 {
   font-size: 40px; /* matched original blackprozac look */
@@ -116,4 +113,5 @@ article img {
     padding-top: 0;
   }
 }
+
 
