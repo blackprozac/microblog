@@ -26,8 +26,13 @@ header {
 }
 
 header h1 {
-  font-size: 28px;
+  font-size: 40px; /* matched original blackprozac look */
   font-weight: normal;
+  color: #111;
+}
+
+header h1 a {
+  text-decoration: none;
   color: #111;
 }
 
@@ -40,7 +45,7 @@ header nav {
 
 header nav a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   color: #111;
   font-weight: bold;
 }
@@ -99,11 +104,11 @@ article img {
   }
 
   header h1 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   header nav a {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   main {
