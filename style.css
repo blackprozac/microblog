@@ -99,7 +99,7 @@ article img {
   margin: 10px 0;
   object-fit: contain;
   border-radius: 4px;
-  float: left; /* stick to left */
+  float: left; /* Always stick to the left */
   margin-right: 10px; /* spacing from text */
 }
 
@@ -133,11 +133,11 @@ article img.wide {
     padding-top: 0;
   }
 
-  /* Reduce image dominance on small screens */
+  /* Keep left alignment on mobile too */
   article img {
     max-height: 60vh;
     border-radius: 3px;
-    float: none; /* disable left float on mobile for readability */
-    margin: 10px auto;
+    float: left;
+    margin-right: 8px;
   }
 }
