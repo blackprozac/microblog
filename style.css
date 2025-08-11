@@ -108,8 +108,11 @@ article img.wide {
 
 /* Mobile responsiveness */
 @media screen and (max-width: 768px) {
-  header {
-    padding-left: 20px; /* Align with menu padding */
+  /* Same left padding for header, main, and articles */
+  header,
+  main,
+  article {
+    padding-left: 20px;
     padding-right: 10px;
   }
 
@@ -126,14 +129,7 @@ article img.wide {
     font-size: 22px;
   }
 
-  main {
-    padding-left: 20px; /* Left padding for blog content */
-    padding-right: 10px;
-    padding-top: 0;
-  }
-
-  /* No extra padding inside article text so it lines up perfectly */
-  article,
+  /* Remove double padding inside paragraphs */
   article p {
     padding-left: 0;
     padding-right: 0;
