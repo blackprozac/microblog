@@ -96,7 +96,7 @@ article img {
   margin: 10px 0;            /* Space above & below */
   max-width: 100%;
   height: auto;
-  border-radius: 4px;
+
   object-fit: contain;
 }
 
@@ -141,3 +141,4 @@ article img.wide {
     border-radius: 3px;
   }
 }
+
