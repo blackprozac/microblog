@@ -1,101 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>microblog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>blackprozac</title>
+  <meta name="description" content="blackprozac" />
+  <meta property="og:title" content="blackprozac" />
+  <meta property="og:description" content="art index" />
+  <meta property="og:image" content="blackprozac.github.io/paintingdemons.png" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="blackprozac" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <style>
+    /* Background container covering entire viewport */
+    #bg-container {
+      position: fixed;
+      top: 0; left: 0; width: 100vw; height: 100vh;
+      z-index: -1;
+      overflow: hidden;
+      background-color: white;
+      opacity: 0.3; /* overall background opacity */
+      transition: background-color 0.2s ease;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1><a href="https://0066700.xyz">blackprozac</a></h1>
-  </header>
-<article>
-<a href="https://0066700.xyz">@blackprozac</a>&nbsp;<time>2025-08-11 17:44:45</time>
-<p><img src="https://files.catbox.moe/cuaoa6.png"></p>
-</article>
+  <div id="bg-container"></div>
 
-<br>
+  <div class="content">
+    <h1 class="logo"><a href="index.html">blackprozac</a></h1>
+    <nav class="links">
+      <a href="photography/photography.html">.photography</a>
+      <a href="https://204609.xyz/" target="_blank">.art</a>
+      <a href="https://soundcloud.com/blackprozac" target="_blank">.music</a>
+      <a href="https://dotbubble.xyz/" target="_blank">.clothing</a>
+      <a href="https://0066700.xyz/microblog">.frequent thoughts</a>
+      <a href="https://instagram.com/blackprozac" target="_blank">.instagram</a>
+    </nav>
+  </div>
 
+  <script>
+    (function(){
+      const bgContainer = document.getElementById('bg-container');
+      const images = [
+        'bg1.png',
+        'bg2.png',
+        'bg3.png',
+        'bg4.png',
+        'bg5.png',
+        'bg6.png'
+      ];
 
-<article>
-<a href="https://0066700.xyz">@blackprozac</a>&nbsp;<time>2025-08-11 17:17:05</time>
-<p>combat ballerina</p>
-</article>
+      let index = 0;
+      const displayDuration = 2000; // 2 seconds
+      const whiteDipDuration = 200; // quick dip to white duration
 
-<br>
+      function showImage(idx) {
+        bgContainer.style.backgroundImage = `url(${images[idx]})`;
+        bgContainer.style.backgroundColor = 'transparent';
+      }
 
+      function dipToWhite(callback) {
+        bgContainer.style.backgroundColor = 'white';
+        setTimeout(() => {
+          bgContainer.style.backgroundColor = 'transparent';
+          callback();
+        }, whiteDipDuration);
+      }
 
-<article>
-<a href="https://0066700.xyz">@blackprozac</a>&nbsp;<time>2025-08-11 16:50:01</time>
-<p>please text me back <a href="https://204609.xyz" target=_blank>204609.xyz </a></p>
-</article>
+      function next() {
+        dipToWhite(() => {
+          index = (index + 1) % images.length;
+          showImage(index);
+          setTimeout(next, displayDuration);
+        });
+      }
 
-<br>
-
-
-<article>
-<a href="https://0066700.xyz">@blackprozac</a>&nbsp;<time>2023-10-29 03:46:07</time>
-<p>my eyes are scarred./</p>
-</article>
-
-<br>
-
-<article>
-<a href="https://0066700.xyz">@blackprozac</a>&nbsp;<time>2023-08-21 03:33:11</time>
-<p>bubblegum crisis</p>
-</article>
-    
-<br>
-    
-<article>
-<a href="https://0066700.xyz">@blackprozac</a>&nbsp;<time>2023-06-03 01:36:06</time>
-<p>now self-destruction</p>
-</article>
-
-<br>
-
-<article>
-<a href="https://0066700.xyz">@blackprozac</a>&nbsp;<time>2023-05-31 03:22:22</time>
-<p>this debian setup got me tired as hell</p>
-</article>
-
-<br>
-
-<article>
-<a href="https://0066700.xyz">@blackprozac</a>&nbsp;<time>2023-05-17 20:11:08</time>
-<p>DOTCOMBUBBLE</p>
-</article>
-
-<br>
-
-
-<article>
-<a href="https://0066700.xyz">@blackprozac</a>&nbsp;<time>2023-04-30 10:12:53</time>
-<p>SAMPLETHEWORLD</p>
-</article>
-
-<br>
-
-<article>
-<a href="https://0066700.xyz">@blackprozac</a>&nbsp;<time>2023-04-25 16:39:51</time>
-<p>i want to create a script to control spotify</p>
-</article>
-
-<br>
-
-<article>
-<a href="https://0066700.xyz">@blackprozac</a>&nbsp;<time>2023-04-23 17:02:12</time>
-<p>this is a image test <br> <img src="https://i.pinimg.com/736x/f2/b5/5f/f2b55fb170e9ce287b58c5e44a920628.jpg"></p>
-</article>
-
-<br>
-
-<article>
-<a href="https://0066700.xyz">@blackprozac</a>&nbsp;<time>2023-04-23 16:56:51</time>
-<p>this is a test\</p>
-</article>
-
-<br>
-
+      // Initial setup
+      showImage(index);
+      setTimeout(next, displayDuration);
+    })();
+  </script>
 </body>
 </html>
