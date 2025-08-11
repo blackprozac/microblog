@@ -130,6 +130,13 @@ article img.wide {
     padding-top: 0;
   }
 
+  /* Add horizontal padding inside articles and paragraphs for phones */
+  article,
+  article p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   /* Reduce image dominance on small screens */
   article img {
     max-height: 60vh;
