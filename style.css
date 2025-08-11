@@ -17,17 +17,18 @@ body, html {
   font-family: 'ArialBlackWeb', sans-serif;
   color: #111;
   background: white;
-  overflow-x: hidden;
+  overflow: auto;
 }
 
-/* Header */
+/* Header Container */
 header {
-  margin: 0; /* no spacing around header */
-  padding: 0; /* remove all padding */
+  margin: 0;
+  padding: 0;
 }
 
+/* Logo */
 header h1 {
-  font-size: 40px; /* original blackprozac look */
+  font-size: 40px;
   font-weight: normal;
   color: #111;
 }
@@ -37,6 +38,7 @@ header h1 a {
   color: #111;
 }
 
+/* Navigation Links */
 header nav {
   margin-top: 5px;
   display: flex;
@@ -45,7 +47,8 @@ header nav {
 }
 
 header nav a {
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
   font-size: 20px;
   color: #111;
   font-weight: bold;
@@ -67,7 +70,8 @@ article {
 
 article a {
   color: #111;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 article a:hover {
@@ -96,7 +100,7 @@ article img {
 /* Mobile responsiveness */
 @media screen and (max-width: 768px) {
   header {
-    padding: 0; /* ensure no padding on mobile too */
+    padding: 0;
   }
 
   header nav {
@@ -105,11 +109,11 @@ article img {
   }
 
   header h1 {
-    font-size: 28px;
+    font-size: 28px; /* matches second CSS behavior */
   }
 
   header nav a {
-    font-size: 18px;
+    font-size: 22px; /* bigger on mobile like in second CSS */
   }
 
   main {
